@@ -1,0 +1,990 @@
+body{
+  background-color: #0f3e7c;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.menu{
+  top: 4px;
+  right: 7%;
+  height: 50px;
+  width: 70%;
+  position: absolute;
+  border-radius: 20px;
+}
+.menu a{
+    color:#303030;
+    font-size: 23px;
+    text-decoration:none;
+    position: relative;
+}
+  
+.header-main{
+    text-align: center;
+    opacity: 100%;
+    width: 100%;
+    max-width: 2560px; min-width: 300px;
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 22px;
+    margin-top: -670px;
+}
+p{
+    margin: 0;
+  text-indent: 3ch;
+  margin-bottom: 2em;
+}
+
+
+    
+  footer{
+    position: absolute;
+    width: 100% ;
+    height: 525px;
+    left: 0px;
+    top: 2500px;
+    background-color: #00a1e0;
+  }
+  
+  .footer{
+    width: 100%;
+  }
+
+  .collumn1{
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    left: 50px;
+    top: 10px;
+    font-family: 'Sarala';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 39px;
+    color: #252525;
+    text-align: center;
+  }
+  
+  .collumn2{
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    left: 500px;
+    top: 12px;
+    font-family: 'Sarala';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 39px;
+    color: #252525;
+    text-align: center;
+  }
+  
+  .collumn3{
+    position: absolute;
+    width: 262px;
+    height: 203px;
+    left: 990px;
+    top:12px;
+    font-family: 'Sarala';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 39px;
+    color: #252525;
+    text-align: center;
+  }
+
+  h2{
+    position: relative;
+    float:left;
+    font-size: 18px;
+    left: 70px;
+    top: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    padding: 0 50px ;
+    text-decoration: none !important;
+  }
+
+  h2:before {
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 1px;
+    bottom: 0;  
+    left: 20%;
+    background-color: rgb(255, 255, 255);
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  h2:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+
+  .medicina{
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 20%;
+  }
+
+  .fundo{
+    display: inline-block;
+    width: 100%;
+     height: 700px;
+     background-color: #0c3162;
+  }
+
+  .titulo{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    left: 40%;
+    top: 300px;
+    position: absolute;
+  }
+
+  h1{
+    font-size: 80px;
+    color: #ffffff;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: absolute;
+    left: 50%;
+  }
+
+  .titulomedicina{
+    margin-left: 40%;
+
+  }
+
+  h3{
+    font-size: 53px;
+    color: #e5e5e5;
+    font-family: 'LeagueGothic-Regular-VariableFont_wdth';
+    text-align: center;
+    position: absolute;
+  }
+
+  h4{
+    font-size: 20px;
+    color: #e5e5e5;
+    display: inline-block;
+    position: relative;
+    left: 0px;
+    bottom: 340px;
+  }
+
+  .fotosobre{
+    top:45px;
+    left: 61%;
+    display: inline-block;
+    position: relative;
+    border: radius 80%;
+  }
+
+  .perfil{
+    left: 47%;
+    top: 720px;
+    position: absolute;
+    width: 50%;
+    display: inline-block;
+  }
+
+  .sobreum{
+    width: 99%;
+    height: 300px;
+    left: 10px;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+  }
+
+  .perfilum{
+    bottom: 170px;
+    left: 50px;
+    text-align: left;
+    position: relative;
+    display: inline-block;
+  }
+
+  .titulosobreum{
+    left: 50px;
+    bottom: 550px;
+    position: relative;
+    width: 50%;
+    display: inline-block;
+  }
+
+  .titulosobredois{
+    left: 50px;
+    bottom: 620px;
+    position: relative;
+    width: 50%;
+    display: inline-block;
+  }
+
+  .perfildois{
+    bottom: 240px;
+    left: 50px;
+    text-align: left;
+    position: relative;
+    display: inline-block;
+  }
+
+  .titulosobretres{
+    bottom: 500px;
+    position: relative;
+    width: 50%;
+    display: inline-block;
+    left: 50px;
+  }
+
+  .perfiltres{
+    bottom: 120px;
+    text-align: left;
+    left: 50px;
+    position: relative;
+    display: inline-block;
+  }
+
+  .imagemparteum{
+    position: relative;
+    margin-left: 400px;
+    top: 50px;
+    display: inline-block;
+  }
+
+  .curso{
+    left: 47%;
+    top: 187%;
+    position: absolute;
+    display: inline-block;
+    width: 10%;
+    }
+
+    .sobrecurso{
+      top: 60px;
+      left: 5%;
+      position: relative;
+      display: inline-block;
+      text-align: center;
+      width: 90%;
+    }
+    
+    .titulofaculdade{
+      left: 50px;
+      top: 220%;
+      position: absolute;
+      display: inline-block;
+      width: 30%;
+    }
+
+    .faculdadesum{
+      display: flex;
+      justify-content: space-between;
+      margin-left: 10px;
+      background-color: #282828;
+      border-radius: 100px;
+      position: absolute;
+      top: 1840px;
+      width: 270px;
+      height: 200px;
+      box-shadow: 10px 10px 10px black;
+    }
+
+    .primeirafacul{
+        left: 0%;
+        top: 210%;
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .faculdadesdois{
+      display: flex;
+      justify-content: space-between;
+      margin-left: 300px;
+      background-color: #282828;
+      border-radius: 100px;
+      position: absolute;
+      top: 1840px;
+      width: 270px;
+      height: 200px;
+      box-shadow: 10px 10px 10px black;
+    }
+
+    .segundafacul{
+        left: 0%;
+        top: 210%;
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .faculdadestres{
+      display: flex;
+      justify-content: space-between;
+      margin-left: 600px;
+      background-color: #282828;
+      border-radius: 100px;
+      position: absolute;
+      top: 1840px;
+      width: 270px;
+      height: 200px;
+      box-shadow: 10px 10px 10px black;
+    }
+
+    .terceirafacul{
+        left: 0%;
+        top: 210%;
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .faculdadesquatro{
+      display: flex;
+      justify-content: space-between;
+      margin-left: 920px;
+      background-color: #282828;
+      border-radius: 100px;
+      position: absolute;
+      top: 1840px;
+      width: 270px;
+      height: 200px;
+      box-shadow: 10px 10px 10px black;
+    }
+
+    .quartafacul{
+        left: 0%;
+        top: 210%;
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .faculdadescinco{
+      display: flex;
+      justify-content: space-between;
+      margin-left: 1230px;
+      background-color: #282828;
+      border-radius: 100px;
+      position: absolute;
+      top: 1840px;
+      width: 270px;
+      height: 200px;
+      box-shadow: 10px 10px 10px black;
+    }
+
+    .quintafacul{
+        left: 0%;
+        top: 210%;
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .titulofaculdadeprivada{
+      left: 50px;
+      top: 270%;
+      position: absolute;
+      display: inline-block;
+      width: 30%;
+    }
+
+    .faculdadesumprivada{
+      display: flex;
+      justify-content: space-between;
+      margin-left: 10px;
+      background-color: #282828;
+      border-radius: 100px;
+      position: absolute;
+      top: 2240px;
+      width: 270px;
+      height: 200px;
+      box-shadow: 10px 10px 10px black;
+    }
+
+    .primeirafaculprivada{
+        left: 0%;
+        top: 210%;
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .faculdadesdoisprivada{
+      display: flex;
+      justify-content: space-between;
+      margin-left: 300px;
+      background-color: #282828;
+      border-radius: 100px;
+      position: absolute;
+      top: 2240px;
+      width: 270px;
+      height: 200px;
+      box-shadow: 10px 10px 10px black;
+    }
+
+    .segundafaculprivada{
+        left: 0%;
+        top: 210%;
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .faculdadestresprivada{
+      display: flex;
+      justify-content: space-between;
+      margin-left: 600px;
+      background-color: #282828;
+      border-radius: 100px;
+      position: absolute;
+      top: 2240px;
+      width: 270px;
+      height: 200px;
+      box-shadow: 10px 10px 10px black;
+    }
+
+    .terceirafaculprivada{
+        left: 0%;
+        top: 210%;
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .faculdadesquatroprivada{
+      display: flex;
+      justify-content: space-between;
+      margin-left: 920px;
+      background-color: #282828;
+      border-radius: 100px;
+      position: absolute;
+      top: 2240px;
+      width: 270px;
+      height: 200px;
+      box-shadow: 10px 10px 10px black;
+    }
+
+    .quartafaculprivada{
+        left: 0%;
+        top: 210%;
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .faculdadescincoprivada{
+      display: flex;
+      justify-content: space-between;
+      margin-left: 1230px;
+      background-color: #282828;
+      border-radius: 100px;
+      position: absolute;
+      top: 2240px;  
+      width: 270px;
+      height: 200px;
+      box-shadow: 10px 10px 10px black;
+    }
+
+    .quintafaculprivada{
+        left: 0%;
+        top: 210%;
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .gradecurricular{
+      left: 50px;
+      top: 320%;
+      position: absolute;
+      display: inline-block;
+      width: 30%;
+    }
+
+    .grade{
+      top: 1050px;
+      left: 50px;
+      position: relative;
+      display: inline-block;
+      text-align: left;
+      width: 90%;
+    }
+
+    .fasesfacul{
+      left: 50px;
+      top: 416%;
+      position: absolute;
+      display: inline-block;
+      width: 20%;
+    }
+
+
+    .notacorte{
+      left: 50px;
+      top: 436%;
+      position: absolute;
+      display: inline-block;
+      width: 20%;
+    }
+
+    .mercado{
+      left: 45.5%;
+      top: 457%;
+      position: absolute;
+      display: inline-block;
+      width: 10%;
+    }
+
+    .salario{
+      left: 50px;
+      top: 475%;
+      position: absolute;
+      display: inline-block;
+      width: 20%;
+    }
+
+    .sobresalario{
+      top: 1690px;
+      left: 50px;
+      position: relative;
+      display: inline-block;
+      text-align: left;
+      width: 90%;
+    }
+
+    .empregabilidade{
+      left: 50px;
+      top: 500%;
+      position: absolute;
+      display: inline-block;
+      width: 20%;
+    }
+
+    .empregabilidadesobre{
+      top: 1850px;
+      left: 50px;
+      position: relative;
+      display: inline-block;
+      text-align: left;
+      width: 90%;
+    }
+
+    h6{
+      font-size: 30px;
+      color: #e9e9e9;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      text-align: center;
+      position: absolute;
+      font-weight: bold;
+    }
+
+    .pos{
+      left: 43%;
+      top: 537%;
+      position: absolute;
+      display: inline-block;
+      width: 20%;
+    }
+
+    .posobre{
+      top: 2100px;
+      left: 5%;
+      position: relative;
+      display: inline-block;
+      text-align: center;
+      width: 90%;
+    }
+
+    .posum{
+      display: flex;
+      justify-content: space-between;
+      margin-left: 10px;
+      background-color: #282828;
+      border-radius: 100px;
+      position: absolute;
+      top: 570%;
+      width: 300px;
+      height: 350px;
+      box-shadow: 10px 10px 10px black;
+    }
+
+    .posumsobre{
+      left: 0%;
+      top: 125%;
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+    }
+
+    .posdois{
+      display: flex;
+      justify-content: space-between;
+      margin-left: 390px;
+      background-color: #282828;
+      border-radius: 100px;
+      position: absolute;
+      top: 570%;
+      width: 300px;
+      height: 350px;
+      box-shadow: 10px 10px 10px black;
+    }
+
+    .posdoissobre{
+      left: 5%;
+      top: 125%;
+      position: relative;
+      display: inline-block;
+      width: 90%;
+      text-align: center;
+    }
+
+    .postres{
+      display: flex;
+      justify-content: space-between;
+      margin-left: 790px;
+      background-color: #282828;
+      border-radius: 100px;
+      position: absolute;
+      top: 570%;
+      width: 300px;
+      height: 350px;
+      box-shadow: 10px 10px 10px black;
+    }
+
+    .postressobre{
+      left: 5%;
+      top: 125%;
+      position: relative;
+      display: inline-block;
+      width: 90%;
+      text-align: center;
+    }
+
+    .posquatro{
+      display: flex;
+      justify-content: space-between;
+      margin-left: 1200px;
+      background-color: #282828;
+      border-radius: 100px;
+      position: absolute;
+      top: 570%;
+      width: 300px;
+      height: 350px;
+      box-shadow: 10px 10px 10px black;
+    }
+
+    .posquatrosobre{
+      left: 5%;
+      top: 125%;
+      position: relative;
+      display: inline-block;
+      width: 90%;
+      text-align: center;
+    }
+
+    .poscinco{
+      display: flex;
+      justify-content: space-between;
+      margin-left: 10px;
+      background-color: #282828;
+      border-radius: 100px;
+      position: absolute;
+      top: 620%;
+      width: 300px;
+      height: 350px;
+      box-shadow: 10px 10px 10px black;
+    }
+
+    .poscincosobre{
+      left: 5%;
+      top: 105%;
+      position: relative;
+      display: inline-block;
+      width: 90%;
+      text-align: center;
+    }
+
+    .posseis{
+      display: flex;
+      justify-content: space-between;
+      margin-left: 390px;
+      background-color: #282828;
+      border-radius: 100px;
+      position: absolute;
+      top: 620%;
+      width: 300px;
+      height: 350px;
+      box-shadow: 10px 10px 10px black;
+    }
+
+    .posseissobre{
+      left: 5%;
+      top: 125%;
+      position: relative;
+      display: inline-block;
+      width: 90%;
+      text-align: center;
+    }
+
+    .possete{
+      display: flex;
+      justify-content: space-between;
+      margin-left: 790px;
+      background-color: #282828;
+      border-radius: 100px;
+      position: absolute;
+      top: 620%;
+      width: 300px;
+      height: 350px;
+      box-shadow: 10px 10px 10px black;
+    }
+
+    .possetesobre{
+      left: 5%;
+      top: 120%;
+      position: relative;
+      display: inline-block;
+      width: 90%;
+      text-align: center;
+    }
+
+    .posoito{
+      display: flex;
+      justify-content: space-between;
+      margin-left: 1200px;
+      background-color: #282828;
+      border-radius: 100px;
+      position: absolute;
+      top: 620%;
+      width: 300px;
+      height: 350px;
+      box-shadow: 10px 10px 10px black;
+    }
+
+    .posoitosobre{
+      left: 5%;
+      top: 118%;
+      position: relative;
+      display: inline-block;
+      width: 90%;
+      text-align: center;
+    }
+
+    .posnove{
+      display: flex;
+      justify-content: space-between;
+      margin-left: 10px;
+      background-color: #282828;
+      border-radius: 100px;
+      position: absolute;
+      top: 670%;
+      width: 300px;
+      height: 350px;
+      box-shadow: 10px 10px 10px black;
+    }
+
+    .posnovesobre{
+      left: 5%;
+      top: 127%;
+      position: relative;
+      display: inline-block;
+      width: 90%;
+      text-align: center;
+    }
+
+    .posdez{
+      display: flex;
+      justify-content: space-between;
+      margin-left: 390px;
+      background-color: #282828;
+      border-radius: 100px;
+      position: absolute;
+      top: 670%;
+      width: 300px;
+      height: 350px;
+      box-shadow: 10px 10px 10px black;
+    }
+
+    .posdezsobre{
+      left: 5%;
+      top: 127%;
+      position: relative;
+      display: inline-block;
+      width: 90%;
+      text-align: center;
+    }
+
+    .posonze{
+      display: flex;
+      justify-content: space-between;
+      margin-left: 790px;
+      background-color: #282828;
+      border-radius: 100px;
+      position: absolute;
+      top: 670%;
+      width: 300px;
+      height: 350px;
+      box-shadow: 10px 10px 10px black;
+    }
+
+    .posonzesobre{
+      left: 5%;
+      top: 116%;
+      position: relative;
+      display: inline-block;
+      width: 90%;
+      text-align: center;
+    }
+
+    .posdoze{
+      display: flex;
+      justify-content: space-between;
+      margin-left: 1200px;
+      background-color: #282828;
+      border-radius: 100px;
+      position: absolute;
+      top: 670%;
+      width: 300px;
+      height: 350px;
+      box-shadow: 10px 10px 10px black;
+    }
+
+    .posdozesobre{
+      left: 5%;
+      top: 127%;
+      position: relative;
+      display: inline-block;
+      width: 90%;
+      text-align: center;
+    }
+
+    .postreze{
+      display: flex;
+      justify-content: space-between;
+      margin-left: 200px;
+      background-color: #282828;
+      border-radius: 100px;
+      position: absolute;
+      top: 720%;
+      width: 300px;
+      height: 350px;
+      box-shadow: 10px 10px 10px black;
+    }
+
+    .postrezesobre{
+      left: 5%;
+      top: 112%;
+      position: relative;
+      display: inline-block;
+      width: 90%;
+      text-align: center;
+    }
+
+    .posquatorze{
+      display: flex;
+      justify-content: space-between;
+      margin-left: 610px;
+      background-color: #282828;
+      border-radius: 100px;
+      position: absolute;
+      top: 720%;
+      width: 300px;
+      height: 350px;
+      box-shadow: 10px 10px 10px black;
+    }
+
+    .posquatorzesobre{
+      left: 5%;
+      top: 127%;
+      position: relative;
+      display: inline-block;
+      width: 90%;
+      text-align: center;
+    }
+
+
+    .posquinze{
+      display: flex;
+      justify-content: space-between;
+      margin-left: 1000px;
+      background-color: #282828;
+      border-radius: 100px;
+      position: absolute;
+      top: 720%;
+      width: 300px;
+      height: 350px;
+      box-shadow: 10px 10px 10px black;
+    }
+
+    .posquinzesobre{
+      left: 5%;
+      top: 113%;
+      position: relative;
+      display: inline-block;
+      width: 90%;
+      text-align: center;
+    }
+
+    .crm{
+      left: 48%;
+      top: 790%;
+      position: absolute;
+      display: inline-block;
+      width: 10%;
+    }
+
+    .crmsobre{
+      top: 4030px;
+      left: 5%;
+      position: relative;
+      display: inline-block;
+      text-align: center;
+      width: 90%;
+    }
+
+    .video{
+        left: 45.5%;
+        top: 837%;
+        position: absolute;
+        display: inline-block;
+        width: 20%;    
+      }
+
+
+  html {
+    scroll-behavior: smooth;
+  }
+   
+  :target {
+    scroll-margin-top: .8em;
+  }
+
+  @font-face {
+    font-family: 'LeagueGothic-Regular-VariableFont_wdth' ;
+    src: url(../league/LeagueGothic-Regular-VariableFont_wdth.ttf);
+  }
