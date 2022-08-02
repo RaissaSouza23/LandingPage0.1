@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: rgb(255, 255, 255);
+    color: rgb(234, 255, 239);
 }
 p{
     color: black;
@@ -18,12 +18,16 @@ body{
 }
 /* Menu - Header - NavBar */
 header {
+    display:flex;
+    justify-content: space-around;
     width: 100%;
     height: 8.5vh;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: #25302b;
     position: fixed;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .menu {
+    background-color: #25302b;
     height: 90%;
     padding: 5px;
     float: left;
@@ -35,8 +39,11 @@ header {
 .menu .list-itens {
     display: flex;
     list-style: none;
-    gap: 120px;
-    
+    gap: 180px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #25302b;
 }
 .menu .list-itens a {
     text-decoration: none;
@@ -45,6 +52,7 @@ header {
     color: rgb(0, 0, 0);*/
     padding: 1rem;
     position: relative;
+    background-color: #25302b;
 }
 .menu .list-itens a:before {
     content: "";
@@ -53,7 +61,7 @@ header {
     height: 2px;
     bottom: 20%;  
     left: 20%;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     visibility: hidden;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
@@ -71,7 +79,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../imagem/capa/3.jpg);
+    background-image:  url(../imagem/capa/8.png);
     background-position: center center;
     background-size: cover;
     background-position-y: 0px;
@@ -86,42 +94,73 @@ main {
 .main-content h1
 {
     position: relative;
+    text-shadow: 5px 5px 10px #ffffff;
     z-index: 2;
     color: rgb(0, 0, 0);
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 100px;
 }
-#sobre {
-    height: 93vh;
-}
 .titulo1 {
+    align-items: center;
     font-size: 60px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     color: black;
     text-align: center;
+    padding-top: 10px;
+}
+#sobre {
+    background-color: #bffcdf;
+    height: 20vh;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    max-height: 2000px;
+    margin:0 auto;
+    padding: 0px 0px 0px ;
+    padding-top: 30px;
 }
 .t1{
+    text-align: center;
     color: #000;
     font-size: 50px;
 }
 .t2{
+    text-align: center;
     color: #000;
     font-size: 50px;
 }
 .t3{
+    text-align: center;
     color: #000;
     font-size: 50px;
 }
 .sobre_med{
+    left: 10px;
+    text-align: center;
     color: black;
     font-size: 20px;
 }
 .caracteristicas{
+    text-align: center;
     color: black;
     font-size: 20px;
 }
 .diadia{
+    text-align: center;
     color: black;
     font-size: 20px;
+}
+.sobreimg{
+    background-color: #000;
+    background-image:  url(../imagem/capa/4.png);
+    background-position: center center;
+    justify-content: center;
+    width: 70vh;
+    height: 50vh;
+    display: flex;
+    background-size: cover;
+    margin: auto;
+    background-repeat: no-repeat;
 }
