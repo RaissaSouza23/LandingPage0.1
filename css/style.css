@@ -94,9 +94,9 @@ main {
 .main-content h1
 {
     position: relative;
-    text-shadow: 5px 5px 10px #ffffff;
+    text-shadow: 5px 5px 10px #000000;
     z-index: 2;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 100px;
 }
@@ -163,4 +163,66 @@ main {
     background-size: cover;
     margin: auto;
     background-repeat: no-repeat;
+}
+#curso{
+    background-color: #0f331f;
+    padding: 5px;
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+.titulo2{
+    font-size: 60px;
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.sobre_curso{
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Titillium Web', sans-serif;
+    padding-top: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-bottom: 20px;
+}
+.titulo3{
+    font-size: 40px;
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 60px;
+}
+.faculdade_curso{
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Titillium Web', sans-serif;
+    padding-top: 0px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+#carrosel{
+    width: 640px;
+    height: 360px;
+    overflow: hidden;
+}
+
+.carrosel .fotos{
+    width: 500%;
+    animation: animacao 6s linear infinite;
+}
+
+@keyframes animacao{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+    75%{margin-left: -300%;}
+    95%{margin-left: -300%;}
+    100%{margin-left: -400%;}
 }
