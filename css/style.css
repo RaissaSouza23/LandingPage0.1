@@ -1,223 +1,81 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: rgb(234, 255, 239);
 }
-p{
-    color: black;
-  margin: 0;
-  text-indent: 3ch;
-  margin-bottom: 2em;
-}
-html{
-    scroll-behavior: smooth;
-}
-body{
-    background-color:#acf5c2;
-}
-/* Menu - Header - NavBar */
-header {
-    display:flex;
-    justify-content: space-around;
+
+.topo{
+    position: fixed ;
     width: 100%;
-    height: 8.5vh;
+    height: 6%;
     background-color: #25302b;
-    position: fixed;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-.menu {
-    background-color: #25302b;
-    height: 90%;
-    padding: 5px;
-    float: left;
-    display: flex;
-    justify-content: space-around;
+    z-index: 2;
     align-items: center;
     font-size: 1rem;
-}
-.menu .list-itens {
-    display: flex;
-    list-style: none;
-    gap: 180px;
-    display:flex;
     justify-content: space-around;
-    align-items: center;
-    background-color: #25302b;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.menu .list-itens a {
-    text-decoration: none;
-    /*text-decoration: underline overline;
-    text-decoration-color:rgb(44, 41, 218);
-    color: rgb(0, 0, 0);*/
-    padding: 1rem;
-    position: relative;
-    background-color: #25302b;
+.links{
+   align-items: center;
+   float: left;
+   position: relative;
+   list-style-type: none;
+   margin-left: 12.5%;
+   top: 15px;
 }
-.menu .list-itens a:before {
-    content: "";
-    position: absolute;
-    width: 60%;
-    height: 2px;
-    bottom: 20%;  
-    left: 20%;
-    background-color: rgb(255, 255, 255);
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
+a{
+   text-decoration:none;
+   align-items: center;
+   color: white;
+   font-size: 30px;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.menu .list-itens a:hover:before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
+.links a:before {
+   content: "";
+   position: absolute;
+   width: 90%;
+   height: 2px;
+   bottom: 8%;  
+   left: 5%;
+   background-color: rgb(255, 255, 255);
+   visibility: hidden;
+   -webkit-transform: scaleX(0);
+   transform: scaleX(0);
+   -webkit-transition: all 0.3s ease-in-out 0s;
+   transition: all 0.3s ease-in-out 0s;
+}
+.links a:hover:before {
+   visibility: visible;
+   -webkit-transform: scaleX(1);
+   transform: scaleX(1);
 }
 
-main {
+
+
+.carrossel{
+    background-color: rgb(206, 195, 195);
+    width: 100%;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image:  url(../imagem/capa/8.png);
-    background-position: center center;
-    background-size: cover;
-    background-position-y: 0px;
-    background-repeat: no-repeat;
-}
-.main-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.main-content h1
-{
     position: relative;
-    text-shadow: 5px 5px 10px #000000;
-    z-index: 2;
-    color: rgb(255, 255, 255);
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size: 100px;
+  height: 100vh;
+  overflow: hidden;
 }
-.titulo1 {
-    align-items: center;
-    font-size: 60px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    color: black;
-    text-align: center;
-    padding-top: 10px;
-}
-#sobre {
-    background-color: #bffcdf;
-    height: 20vh;
-    padding: 50px;
-    display: flex;
-    justify-content: space-around;
-    max-width: 100%;
-    max-height: 2000px;
-    margin:0 auto;
-    padding: 0px 0px 0px ;
-    padding-top: 30px;
-}
-.t1{
-    text-align: center;
-    color: #000;
-    font-size: 50px;
-}
-.t2{
-    text-align: center;
-    color: #000;
-    font-size: 50px;
-}
-.t3{
-    text-align: center;
-    color: #000;
-    font-size: 50px;
-}
-.sobre_med{
-    left: 10px;
-    text-align: center;
-    color: black;
-    font-size: 20px;
-}
-.caracteristicas{
-    text-align: center;
-    color: black;
-    font-size: 20px;
-}
-.diadia{
-    text-align: center;
-    color: black;
-    font-size: 20px;
-}
-.sobreimg{
-    background-color: #000;
-    background-image:  url(../imagem/capa/4.png);
-    background-position: center center;
-    justify-content: center;
-    width: 70vh;
-    height: 50vh;
-    display: flex;
-    background-size: cover;
-    margin: auto;
-    background-repeat: no-repeat;
-}
-#curso{
-    background-color: #0f331f;
-    padding: 5px;
-    padding-top: 40px;
-    padding-bottom: 100px;
-}
-.titulo2{
-    font-size: 60px;
-    color: #ffffff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    text-align: center;
-    padding-bottom: 20px;
-}
-.sobre_curso{
-    color: #ffffff;
-    font-size: 20px;
-    font-family: 'Titillium Web', sans-serif;
-    padding-top: 10px;
-    margin-left: 20%;
-    margin-right: 20%;
-    padding-bottom: 20px;
-}
-.titulo3{
-    font-size: 40px;
-    color: #ffffff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    text-align: center;
-    padding-bottom: 20px;
-    padding-top: 60px;
-}
-.faculdade_curso{
-    color: #ffffff;
-    font-size: 20px;
-    font-family: 'Titillium Web', sans-serif;
-    padding-top: 0px;
-    text-align: center;
-    padding-bottom: 20px;
-}
-#carrosel{
-    width: 640px;
-    height: 360px;
-    overflow: hidden;
-}
-
-.carrosel .fotos{
-    width: 500%;
-    animation: animacao 6s linear infinite;
-}
-
-@keyframes animacao{
+.carrossel .fotos{
+    width: 502%;
+    animation: animacao 15s infinite;
+    position: relative;
+    top: -100px;
+  }
+  
+  .carrossel .fotos img{
+    width: 19.9%;
+  }
+  
+  
+  @keyframes animacao {
     0%{margin-left: 0;}
-    20%{margin-left: 0;}
+    20%{margin-left:0;}
     25%{margin-left: -100%;}
     45%{margin-left: -100%;}
     50%{margin-left: -200%;}
@@ -225,4 +83,1103 @@ main {
     75%{margin-left: -300%;}
     95%{margin-left: -300%;}
     100%{margin-left: -400%;}
+  
+  }
+  
+
+  /* text carrossel */
+.text{
+    position: absolute;
 }
+ .text > h1{
+    position: relative;
+    top: 250px;
+    color: #ffffff;
+  font-size: 5rem;
+  font-family: 'Roboto Slab', serif;
+  left: 250px;
+  z-index: 1;
+ } 
+
+ /* section 1 */
+.section1{
+   background-color: #dbd7d7;
+   width: 100%;
+   height: 110vh;
+   position: relative;
+}
+.section1 > center > h1{
+   position: relative;
+   font-size: 60px;
+   font-family: 'Roboto Slab', serif;
+   padding-top: 10;
+}
+.section1 > h2{
+   text-align: center;
+   position: absolute;
+   font-size: 35px;
+   font-family: 'Roboto Slab', serif;
+   padding-left: 15.5%;
+   padding-top: 2%;
+}
+.section1 > p{
+   position: absolute;
+   font-size: 20px;
+   padding-left: 15.5%;
+   padding-top: 80px;
+}
+.section1 > h3{
+   position: absolute;
+   font-size: 35px;
+   font-family: 'Roboto Slab', serif;
+   padding-left: 43.5%;
+   padding-top: 2%;
+}
+.section1 > p2{
+   position: absolute;
+   font-size: 20px;
+   padding-left: 43.5%;
+   padding-top: 80px;
+}
+.section1 > h4{
+   position: absolute;
+   font-size: 35px;
+   font-family: 'Roboto Slab', serif;
+   padding-left: 72%;
+   padding-top: 2%;
+}
+.section1 > p3{
+   position: absolute;
+   font-size: 20px;
+   padding-left: 72%;
+   padding-top: 80px;
+}
+.img-wrapper {
+   height: 60vh;
+   width: 120vh;
+   overflow: hidden;
+   background-color: rgba(0, 0, 0, 0.8);
+   position: relative;
+   top: 30%;
+   left: 20%;
+ }
+
+ .img-wrapper img {
+   height:100%;
+   width: 100%;
+   object-fit: cover;
+}
+
+/* section 2 */
+.section2{
+   background-color: #393737;
+   width: 100%;
+   height: 280vh;
+   position: relative;
+}
+.section2 > center > h1{
+   position: relative;
+   font-size: 50px;
+   font-family: 'Roboto Slab', serif;
+   padding-top: 2;
+   color: white;
+}
+.section2 > h2{
+   position: absolute;
+   font-size: 35px;
+   font-family: 'Roboto Slab', serif;
+   padding-left: 39%;
+   padding-top: 2%;
+   color: white;
+}
+.section2 > p{
+   position: absolute;
+   font-size: 20px;
+   padding-left: 25%;
+   padding-top: 80px;
+   color: white;
+}
+.section2 > h3{
+   position: absolute;
+   font-size: 37px;
+   font-family: 'Roboto Slab', serif;
+   padding-left: 35%;
+   padding-top: 11%;
+   color: white;
+}
+.section2 > p2{
+   position: absolute;
+   font-size: 30px;
+   padding-left: 25%;
+   padding-top: 14%;
+   color: white;
+}
+.section2 > .faculdades{
+   position: relative;
+   top:13%;
+   padding-right: 100px;
+}
+.section2 > .faculdades > tr , td{
+border:0px solid ;
+ text-align: center;
+ padding-top: 15px;
+ padding-left: 150px;
+}
+.section2 > h4{
+   position: absolute;
+   font-size: 35px;
+   font-family: 'Roboto Slab', serif;
+   padding-left: 65%;
+   padding-top: 2%;
+}
+.section2 > p3{
+   position: absolute;
+   font-size: 20px;
+   padding-left: 65%;
+   padding-top: 80px;
+}
+
+.section2 > center > h4{
+  position: absolute;
+  font-size: 45px;
+  font-family: 'Roboto Slab', serif;
+  padding-left: 40%;
+  padding-top: 27%;
+  color: white;
+  text-align: left;
+}
+.section2 > center > p{
+  position: absolute;
+   font-size: 30px;
+   padding-left: 25%;
+   padding-top: 30%;
+   color: white;
+}
+.section2 > ul{
+  padding-top: 35%;
+}
+.section2 > ul > li{
+  font-family: 'Roboto Slab', serif;
+  padding-left: 7%;
+  color: white;
+  text-align: left;
+  padding-bottom: 10px;
+  font-size: 15px;
+  
+}
+.section2 > ul > p5{
+  font-family: 'Roboto Slab', serif;
+  padding-left: 7%;
+  color: white;
+
+}
+#fotomed{
+  position: absolute;
+  left: 59%;
+  top: 70%;
+  width: 480px;
+}
+
+/* section 3 */
+.section3{
+  background-color: #dbd7d7;
+   width: 100%;
+   height: 80vh;
+   position: relative;
+}
+.section3 > center > h1{
+   position: relative;
+   font-size: 60px;
+   font-family: 'Roboto Slab', serif;
+   padding-top: 2;
+}
+.section3 > h2{
+   position: absolute;
+   font-size: 37px;
+   font-family: 'Roboto Slab', serif;
+   padding-left: 7%;
+   padding-top: 2%;
+   color: #000000;
+}
+.section3 > p{
+   position: absolute;
+   font-size: 20px;
+   padding-left: 7%;
+   padding-right: 7%;
+   padding-top: 5%;
+   color: #000000;
+}
+.section3 > h3{
+   position: absolute;
+   font-size: 37px;
+   font-family: 'Roboto Slab', serif;
+   padding-left: 7%;
+   padding-top: 12%;
+   color: #000000;
+}
+.section3 > p2{
+   position: absolute;
+   font-size: 20px;
+   padding-left: 7%;
+   padding-right: 7%;
+   padding-top: 15%;
+   color: #000000;
+} 
+#mercadomed{
+   width: 700px;
+   position: absolute;
+   top: 15%;
+   left: 58%;
+}
+
+/* section 4 */
+.section4{
+   background-color:#393737 ;
+   width: 100%;
+   height: 180vh;
+   position: relative;
+}
+.section4 > center > h1{
+   position: relative;
+   font-size: 50px;
+   font-family: 'Roboto Slab', serif;
+   padding-top: 2;
+   color: white;
+}
+.section4 > h2{
+   position: absolute;
+   font-size: 35px;
+   font-family: 'Roboto Slab', serif;
+   padding-left: 7%;
+   padding-top: 3%;
+   color: white;
+}
+.section4 > p{
+   position: absolute;
+   font-size: 20px;
+   padding-left: 7%;
+   padding-right: 40%;
+   padding-top: 7%;
+   color: white;
+}
+#posmed{
+   width: 350px;
+   position: absolute;
+   top: 4%;
+   left: 67%;
+}
+.section4 > ul{
+   padding-top: 23%;
+}
+.section4 > ul > li{
+   font-family: 'Roboto Slab', serif;
+   padding-left: 7%;
+   color: #dbd7d7;
+   text-align: left;
+   padding-bottom: 10px;
+   font-size: 22px;
+   margin-bottom: 20px;
+   position: relative;
+   
+}
+.section4 >center> h2{
+   position: absolute;
+   font-size: 35px;
+   font-family: 'Roboto Slab', serif;
+   padding-left: 23%;
+   padding-top: 18%;
+   color: white;
+}
+
+
+/* section 5 */
+.section5{
+   background-color:#dbd7d7;
+   width: 100%;
+   height: 60vh;
+   position: relative;
+}
+.section5 > center > h1{
+   position: relative;
+   font-size: 60px;
+   font-family: 'Roboto Slab', serif;
+   padding-top: 2px;
+   color: #000000;
+}
+.section5 > h2{
+   position: absolute;
+   font-size: 35px;
+   font-family: 'Roboto Slab', serif;
+   padding-left: 7%;
+   padding-top: 2%;
+   color: #000000;
+}
+.section5 > p{
+   font-size: 20px;
+   padding-left: 7%;
+   padding-right: 60%;
+   padding-top: 5%;
+   color: #000000;
+   position: absolute;
+   margin-bottom: 40px;
+}
+#crm{
+   width: 550px;
+   position: absolute;
+   left: 60%;
+   top: 30%;
+}
+
+/* footer */
+#footer {
+  
+  width:100%;
+  background-color:#fff;
+  margin: 0 auto;
+
+}
+
+  
+/* H3 Styling */
+
+h3.left {
+
+  color: #000;
+  font-size: 16px;
+  font-family: Mallory, Sans-Serif;
+  font-weight: bold;
+  margin: 0 0 10px 0; 
+  text-align: left;
+
+}
+
+h3.center {
+
+  color: #000;
+  font-size: 16px;
+  font-family: Mallory, Sans-Serif;
+  font-weight: bold;
+  margin: 0 0 10px 0; 
+  text-align: center;
+
+}
+  
+
+/* List Styling */
+
+  ul {
+    margin: 0;
+    list-style-type: none;
+}
+
+    li {
+    margin: 0;
+    color: #666666;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 22px;
+    list-style-type: none;
+    text-align: left;
+}
+ 
+
+/* Utility Links Div Styling */
+
+#utility-links {
+
+  width: 50%;
+  height: 150px;
+  background-color:#fff;
+  margin: 40px auto 0 auto;
+   
+}
+
+.rectangle {
+	width: 1px;
+	height: 100px;
+	background: #D8D8D8;
+  margin: 0 30px 0 0;
+  float: left;
+  display: inline-block;
+
+}
+
+  
+/* Help Styling */
+
+.help {
+ 
+  width: 30%;
+  height: 100px;
+  float: left;
+  margin: 0;
+  display: inline-block;
+ 
+}
+
+  
+/* Help Img Icons*/
+
+.help-img-icon {
+
+  float: left;
+  margin: 0 5px 0 0;
+
+}
+
+
+/* About Styling */
+
+.about {
+
+  width: 30%;
+  height: 100px;
+  float: left;
+  margin: 0;
+  display: inline-block;
+
+}
+
+
+/* Card Services Styling */
+
+.card {
+
+  width: 30%;
+  height: 100px;
+  float: left;
+  margin: 0;
+  display: inline-block;
+
+}
+
+
+/* Newsletter-Social Container */ 
+
+#newsletter-social {
+ 
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+
+}
+    
+  
+/* Newsletter Styling */ 
+
+#newsletter {
+ 
+  width: 65%;
+  margin: 30px 0 0 0;
+  text-align: center;
+  float: left;
+  display: inline-block;
+
+}
+
+p.deals {
+    
+  font-size: 13px;
+  font-family: Helvetica, Arial, Sans-Serif;
+  font-weight: 500; 
+  line-height: 0;
+  text-align: center;
+  
+}
+
+input[type=text] {
+
+    width: 60%;
+    padding: 15px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px #D9D6D6;
+    background-color: #F2F2F2;
+    border-radius: 4px;
+    font-size: 13px;
+    font-family: Helvetica, Arial, Sans-Serif;
+    font-weight: 500;
+}
+
+
+input[type=button], input[type=submit], input[type=reset] {
+
+    background-color: #0677FF;
+    border: 2px;
+    border-radius: 4px;
+    color: white;
+    padding: 15px 35px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 13px;
+    font-family: Helvetica, Arial, Sans-Serif;
+    font-weight: 900;
+  
+}
+
+
+/* Social Media Styling */ 
+
+#social {
+
+  width: 35%;
+  margin: 80px 0 0 0;
+  float: right;
+  display: inline-block;
+
+}
+
+
+/* Copyright Styling */ 
+
+.rectangle-horiz {
+	width: 100%;
+	height: 2px;
+	background: #D8D8D8;
+  margin: 170px 0 0 0;
+
+}
+
+
+#copyright {
+  
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+
+}
+
+
+ .copy {
+
+    color: #a7a7a7;
+    font-size: 10px;
+    font-family: Helvetica, Arial, Sans-Serif;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    margin-left: 20px;
+    display: inline-block;
+overflow: hidden;
+
+}
+
+
+/* Link Styling */
+
+
+
+
+/* =TABLET */
+
+@media all and (max-width: 1339px) and (min-width: 600px) {
+
+/* Footer Parent Div Styling */
+
+#footer {
+  
+  width:100%;
+  background-color:#fff;
+  margin: 0 auto;
+
+}
+
+/* H3 Styling */
+
+h3.left {
+
+  color: #000;
+  font-size: 16px;
+  font-family: Mallory, Sans-Serif;
+  font-weight: bold;
+  margin: 0 0 10px 0; 
+  text-align: left;
+
+}
+
+h3.center {
+
+  color: #000;
+  font-size: 16px;
+  font-family: Mallory, Sans-Serif;
+  font-weight: bold;
+  margin: 0 0 10px 0; 
+  text-align: center;
+
+}
+  
+
+/* List Styling */
+
+  ul {
+    margin: 0;
+    list-style-type: none;
+}
+
+    li {
+    margin: 0;
+    color: #666666;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 22px;
+    list-style-type: none;
+  text-align: left;
+}
+ 
+
+
+/* Utility Links Div Styling */
+
+#utility-links {
+
+  width: 90%;
+  height: 150px;
+  background-color:#fff;
+  margin: 40px auto 0 auto;
+
+ 
+    
+}
+
+.rectangle {
+	width: 1px;
+	height: 100px;
+	background: #D8D8D8;
+  margin: 0 30px 0 30px;
+  float: left;
+display: inline-block;
+
+}
+
+/* Help Styling */
+
+.help {
+ 
+  width: 25%;
+  height: 100px;
+  float: left;
+  margin: 0;
+display: inline-block;
+ 
+}
+
+/* Help Img Icons*/
+
+.help-img-icon {
+
+  float: left;
+  margin: 0 5px 0 0;
+
+}
+
+
+/* About Styling */
+
+.about {
+
+  width: 25%;
+  height: 100px;
+  float: left;
+  margin: 0;
+display: inline-block;
+
+}
+
+
+/* Card Services Styling */
+
+.card {
+
+  width: 25%;
+  height: 100px;
+  float: left;
+  margin: 0;
+display: inline-block;
+
+}
+
+
+/* Newsletter Styling */ 
+
+#newsletter {
+ 
+  width: 50%;
+  margin: 30px 0 0 0;
+  text-align: center;
+float: left;
+display: inline-block;
+
+}
+
+p.deals {
+    
+  font-size: 13px;
+  font-family: Helvetica, Arial, Sans-Serif;
+  font-weight: 500; 
+  line-height: 0;
+  text-align: center;
+  
+}
+
+input[type=text] {
+
+    width: 40%;
+    padding: 15px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px #D9D6D6;
+    background-color: #F2F2F2;
+    border-radius: 4px;
+    font-size: 13px;
+    font-family: Helvetica, Arial, Sans-Serif;
+    font-weight: 500;
+}
+
+
+input[type=button], input[type=submit], input[type=reset] {
+
+    background-color: #0677FF;
+    border: 2px;
+    border-radius: 4px;
+    color: white;
+    padding: 15px 35px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 13px;
+    font-family: Helvetica, Arial, Sans-Serif;
+    font-weight: 900;
+  
+}
+
+
+/* Social Media Styling */ 
+
+#social {
+
+  width: 50%;
+  margin: 80px 0 0 0;
+  float: right;
+  display: inline-block;
+
+}
+
+
+/* Copyright Styling */ 
+
+.rectangle-horiz {
+	width: 100%;
+	height: 2px;
+	background: #D8D8D8;
+  margin: 0 0 0 0;
+
+}
+
+
+#copyright {
+  
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 160px;
+
+}
+
+
+ .copy {
+
+    color: #a7a7a7;
+    font-size: 10px;
+    font-family: Helvetica, Arial, Sans-Serif;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    margin-left: 20px;
+
+
+}
+
+
+/* Link Styling */
+
+a:link {
+    color: #000;
+    text-decoration: none;
+    font-family: Helvetica, Arial, Sans-Serif;
+    font-weight: 500;
+}
+
+a:visited {
+    color: #000;
+    text-decoration: none;
+    font-family: Helvetica, Arial, Sans-Serif;
+    font-weight: 500;
+}
+
+
+a:hover {
+    color: #0677FF;
+    text-decoration: none;
+    font-family: Helvetica, Arial, Sans-Serif;
+    font-weight: 500;
+}
+
+
+a:active {
+    color: #0677FF;
+    text-decoration: none;
+    font-family: Helvetica, Arial, Sans-Serif;
+    font-weight: 500;
+  }
+
+}
+
+
+
+
+/* MOBILE */
+
+@media all and (max-width: 599px) and (min-width: 100px) {
+
+  
+/* Footer Parent Div Styling */
+
+#footer {
+  
+  width:100%;
+  background-color:#fff;
+  margin: 0 auto;
+
+}
+
+/* H3 Styling */
+
+h3.left {
+
+  color: #000;
+  font-size: 16px;
+  font-family: Mallory, Sans-Serif;
+  font-weight: bold;
+  margin: 0 0 10px 0; 
+
+
+}
+
+h3.center {
+
+  color: #000;
+  font-size: 16px;
+  font-family: Mallory, Sans-Serif;
+  font-weight: bold;
+  margin: 0 0 10px 0; 
+  text-align: center;
+
+}
+  
+
+/* List Styling */
+
+  ul {
+    margin: 0;
+    list-style-type: none;
+}
+
+    li {
+    margin: 0;
+    color: #666666;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 22px;
+    list-style-type: none;
+     text-align: center;
+}
+ 
+
+/* Utility Links Div Styling */
+
+#utility-links {
+
+  width: 90%;
+  height: 150px;
+  background-color:#fff;
+  margin: 40px auto 0 auto;
+
+    
+}
+
+
+/* Help Styling */
+
+.help {
+ 
+  width: 100%;
+  height: 100px;
+  float: left;
+  margin: 0;
+
+}
+
+  
+/* Help Img Icons*/
+
+.help-img-icon {
+
+  margin: 0 5px 0 0;
+
+}
+
+
+/* About Styling */
+
+.about {
+
+  width: 100%;
+  height: 100px;
+  float: left;
+  margin: 50px 0 0 0;
+
+}
+
+
+/* Card Services Styling */
+
+.card {
+
+  width: 100%;
+  height: 100px;
+  float: left;
+  margin: 0;
+
+}
+
+
+/* Newsletter Styling */ 
+
+#newsletter {
+ 
+  width: 100%;
+  margin: 210px 0 0 0;
+  text-align: center;
+
+}
+
+p.deals {
+    
+  font-size: 13px;
+  font-family: Helvetica, Arial, Sans-Serif;
+  font-weight: 500; 
+  line-height: 0;
+  text-align: center;
+  
+}
+
+input[type=text] {
+
+    width: 40%;
+    padding: 15px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px #D9D6D6;
+    background-color: #F2F2F2;
+    border-radius: 4px;
+    font-size: 13px;
+    font-family: Helvetica, Arial, Sans-Serif;
+    font-weight: 500;
+}
+
+
+input[type=button], input[type=submit], input[type=reset] {
+
+    background-color: #0677FF;
+    border: 2px;
+    border-radius: 4px;
+    color: white;
+    padding: 15px 35px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 13px;
+    font-family: Helvetica, Arial, Sans-Serif;
+    font-weight: 900;
+  
+}
+
+
+/* Social Media Styling */ 
+
+#social {
+
+  width: 100%;
+  margin: 30px 0 0 0;
+
+}
+
+
+/* Copyright Styling */ 
+
+.rectangle-horiz {
+
+  width: 100%;
+	height: 2px;
+	background: #D8D8D8;
+  margin: 30px 0 0 0;
+
+}
+
+
+#copyright {
+  
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+
+}
+
+
+ .copy {
+
+    color: #a7a7a7;
+    font-size: 8.5px;
+    font-family: Helvetica, Arial, Sans-Serif;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    margin: 0;
+   white-space: nowrap;
+
+
+}
+
+
+/* Link Styling */
+
+a:link {
+    color: rgb(114, 48, 48);
+    text-decoration: none;
+    font-family: Helvetica, Arial, Sans-Serif;
+    font-weight: 500;
+}
+
+a:visited {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: Helvetica, Arial, Sans-Serif;
+    font-weight: 500;
+}
+
+
+a:hover {
+  
+    text-decoration: none;
+    font-family: Helvetica, Arial, Sans-Serif;
+    font-weight: 500;
+}
+
+
+a:active {
+    text-decoration: none;
+    font-family: Helvetica, Arial, Sans-Serif;
+    font-weight: 500;
+  }
